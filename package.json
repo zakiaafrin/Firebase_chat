@@ -1,14 +1,15 @@
 {
-  "name": "firebase_chat",
+  "name": "firebase-chat",
   "version": "1.0.0",
   "description": "Firebase chat for school project",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "reload"
   },
   "author": "Zakia Afrin Jeme",
   "license": "ISC",
   "devDependencies": {
     "reload": "^2.3.1"
   }
-}
+ }
