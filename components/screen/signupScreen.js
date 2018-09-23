@@ -10,9 +10,8 @@ function SignUpScreen() {
     container.classList.add('sign-up-screen');
     container.innerHTML = `
     <div id="goback">
-        <img src="./image/back button.png" alt="Back Button" width="35vw" height="35vh">
-        <div><img src="./image/go_back.png" alt="Back Button" width="30vw" height="40vh"></div>
-        <div>Go Back</div>
+        <img src="./image/back-button.png" alt="Back Button" width="35vw" height="35vh">
+        <div><img src="./image/go_back.png" alt="Back Button" width="28vw" height="45vh"></div>
     </div>
     <div class="logo">
         <img src="./image/logo_signup_4.png" alt="Signup Logo" width="295vw" height="245vh">

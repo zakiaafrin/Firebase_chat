@@ -14,14 +14,14 @@ function LoginScreen() {
         <img src="./image/login_logo.png" alt="logo" width="200vw" height="200vh">
     </div>
     <div class="in">
-        <form>Email <input class="user" type="text" placeholder="abc@def.com"></form>
+        <form style="font-weight: bold; color: white; font-family: "Montserrat", sans-serif; font-size: 22px;">Email <input class="user" type="text" placeholder="abc@def.com"></form>
         </br>
-        <form>Password  <input class="pass" type="password" placeholder="******"></form>
+        <form style="font-weight: bold; color: white; font-family: "Montserrat", sans-serif; font-size: 22px;">Password  <input class="pass" type="password" placeholder="******"></form>
     </div>
     <a href="#" class="forgot">Forgot Password?</a>
     <div class="image">
-        <div id="facebook-login-btn"><img src="http://www.sussex.ac.uk/wcm/assets/media/269/content/39962.100x100.png" alt="Facebook" style="border-radius: 17%"></div>
-        <div id="google-login-btn"><img src="https://jrlocksmithroseville.com/wp-content/uploads/Google-Logo-Square.png" alt="Google"></div>    
+        <div id="facebook-login-btn"><img src="./image/facebook-logo.png" alt="Facebook" style="width: 95px;""></div>
+        <div id="google-login-btn"><img src="./image/gmail.png" alt="Google" style="width: 100px;"></div>    
     </div>
     <div class="button">
         <button class="sign_up" id="sign_up">Sign up</button>                
@@ -50,3 +50,6 @@ function initLoginScreenListeners() {
         navigate('sign-up-screen');
       });
 }
+
+/* <div id="facebook-login-btn"><img src="http://www.sussex.ac.uk/wcm/assets/media/269/content/39962.100x100.png" alt="Facebook" style="border-radius: 17%"></div>
+        <div id="google-login-btn"><img src="https://jrlocksmithroseville.com/wp-content/uploads/Google-Logo-Square.png" alt="Google"></div>     */

@@ -33,7 +33,7 @@ function ChatScreen() {
             <div id="chat_messages" class="chat_messages"></div>
         <div class="chat_input_btn_container">
             <input type="text" class="chat_input_msg" id="chat_input_msg" />
-            <button class="send" id="send">Send</button>
+            <button class="send" id="send"><img src="./image/send.png" alt="Call" width="25vw" height="25vh"></button>
         </div>
         <div class="settings"></div>
     </div>
