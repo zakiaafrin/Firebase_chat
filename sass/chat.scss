@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: #02521d;
+    background-image: linear-gradient(to right, #740867 , #89fffd);
     height: 9vh;
     width: 100%;
   }
@@ -27,11 +27,11 @@
   
   .signout {
     font-size: 17px;
-    background-color: #02521d;
+    background-image: radial-gradient(#0c0401 10%, #3F51B5 15%, #220227 60%);
     color: white;
     border-radius: 50%;
-    width: 20vw;
-    height: 5vh;
+    width: 15vw;
+    height: 6.5vh;
   }
   
   .chat_messages {
@@ -55,7 +55,7 @@
   }
   
   .chat_input_msg {
-    background-color: #02521d;
+    background-color: #02521d94;
     height: 7vh;
     width: 85vw;
     color: whitesmoke;
@@ -63,14 +63,13 @@
   }
   
   .send {
-    background-color: #02521d;
+    background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);
     width: 20vw;
     height: 8vh;
     font-size: 18px;
     color: white;
   }
   
-
   .videocall {
     display: flex;
     justify-content: space-between;
@@ -78,9 +77,8 @@
   
   .msg-bubble-left {
     display: inline-block;
-    min-width: 45px;
-    height: 24px;
-    padding: 25px;
+    min-width: 65px;
+    padding: 15px;
     margin-left: 12px;
     background:#04a912d6;
     position: relative;
@@ -89,6 +87,17 @@
     border-radius: 0px 10px 10px 10px;
   }
   
+  .msg-bubble-right {
+    display: inline-block;
+    min-width: 65px;
+    padding: 15px;
+    margin-right: 12px;
+    background: #04a912d6;
+    position: relative;
+    -moz-border-radius: 10px 0px 10px 10px;
+    -webkit-border-radius: 10px 0px 10px 10px;
+    border-radius: 10px 0px 10px 10px;
+  }
   .msg-bubble-left:before {
     content: "";
     position: absolute;
@@ -97,22 +106,10 @@
     width: 0;
     height: 0;
     border-top: 0px solid transparent;
-    border-right: 26px solid #04a912d6;
-    border-bottom: 13px solid transparent;
+    border-right: 16px solid #04a912d6;
+    border-bottom: 8px solid transparent;
   }
   
-  .msg-bubble-right {
-    display: inline-block;
-    min-width: 45px;
-    height: 24px;
-    padding: 25px;
-    margin-right: 12px;
-    background: #04a912d6;
-    position: relative;
-    -moz-border-radius: 10px 0px 10px 10px;
-    -webkit-border-radius: 10px 0px 10px 10px;
-    border-radius: 10px 0px 10px 10px;
-  }
   .msg-bubble-right:before {
     content: "";
     position: absolute;
@@ -121,8 +118,8 @@
     width: 0;
     height: 0;
     border-top: 0px solid transparent;
-    border-left: 26px solid #04a912d6;
-    border-bottom: 13px solid transparent;
+    border-left: 16px solid #04a912d6;
+    border-bottom: 8px solid transparent;
   }
    
   .msg-date-time {

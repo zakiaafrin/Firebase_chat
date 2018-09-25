@@ -2,7 +2,7 @@ function mountLoadingScreen() {
     $('#root').html(loadingScreen());    //loadingScreen function return result will be shown in the html index
 
     setTimeout(() => {
-       session();
+        session();
     }, 2000);
 }
 
@@ -13,10 +13,17 @@ function loadingScreen() {                      //loadingScreen function return 
     container.classList.add('Loading-screen');
     //to create in center
     container.innerHTML = `
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+    <div class="loadbody">  
+        <span class="back">
+            <span>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+        </span>
+    </div>
       `
 
 
@@ -26,4 +33,9 @@ function loadingScreen() {                      //loadingScreen function return 
     // container.style.alignItems = 'center';
 
     return container;
-}    
+}
+
+{/* <div></div>
+    <div></div>
+    <div></div>
+    <div></div> */}

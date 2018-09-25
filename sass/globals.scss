@@ -6,7 +6,11 @@ $text-color: white;
 body {
     margin: 0;
     padding: 0;
-  }
+    background-image: linear-gradient(to right, #740867 , #89fffd);
+    animation-name: background;
+    animation-duration: 8s;
+  
+ }
 
   %flex-center {
     display: flex;
@@ -14,7 +18,7 @@ body {
   }
 
   %user-pass {
-    background-color: #47169e96;
+    background-color: #902ea996;
     font-family: "Montserrat", sans-serif;
     border-bottom: 1px solid black;
     border-top: 0;
