@@ -1,0 +1,65 @@
+.sign-up-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  #goback {
+    display: flex;
+    align-items: center;
+    background-color: #470303;
+    width: 100%;
+    height: 8vh;
+    font-size: 19px;
+    color: white;
+  }
+  
+  .logo {
+    @extend %flex-center;
+    height: 30vh;
+    margin: 3vh;
+  }
+  
+  .sign-up-screen {
+    background-image: url("../image/signupscreen.jpg");
+    background-size: cover;
+  }
+  
+  .email_pass {
+    height: 32vh;
+    font-size: 20px;
+    color: white;
+    @extend %flex-center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #email {
+    @extend %email_pass;
+    margin-left: 107px;    
+  }
+  
+  #pass {
+    @extend %email_pass; 
+    margin-left: 78px;
+  }
+  
+  #confirmPass {
+    @extend %email_pass;
+    margin-left: 5px;
+  }
+  
+  .signup-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #470303;
+    width: 100%;
+    font-size: 19px;
+    color: white;
+  }

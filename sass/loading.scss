@@ -1,0 +1,38 @@
+.Loading-screen {
+    height: 84vh;
+    @extend %flex-center;
+    align-items: center;
+    background-color: primary-color;
+
+    div {
+        /*find any div inside HTML */
+        height: 16px;
+        width: 8px;
+        background-color: #390cb4;
+        margin: 5px;
+        border-radius: 10px;
+        animation: bar 700ms ease infinite alternate-reverse;
+        
+        &:nth-child(2){
+            /*find 2nd child inside of the div and give a delay for 300ms */
+            animation-delay: 100ms;      
+          }
+          &:nth-child(3){
+            animation-delay: 250ms;
+          }
+          &:nth-child(4){
+            animation-delay: 400ms;
+          }
+      }      
+  }
+  
+  @keyframes bar {
+    from {
+      /* transform: scale(0.5); */
+      height: 20px;
+    }
+    to {
+      /* transform: scale(1); */
+      height: 80px;
+    }
+  }

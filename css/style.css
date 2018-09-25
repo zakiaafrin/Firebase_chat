@@ -3,13 +3,44 @@ body {
   padding: 0;
 }
 
-.Loading-screen {
-  height: 84vh;
+.email_pass, .logo, .container .logo, .container, .Loading-screen {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
+.pass, .user {
+  background-color: #47169e96;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 19px;
+  color: white;
+  height: 7vh;
+}
+
+.sign_in, .sign_up {
+  flex: 1;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#confirmPass, #pass, #email {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 19px;
+}
+
+.Loading-screen {
+  height: 84vh;
+  align-items: center;
+  background-color: primary-color;
+}
 .Loading-screen div {
   /*find any div inside HTML */
   height: 16px;
@@ -19,16 +50,13 @@ body {
   border-radius: 10px;
   animation: bar 700ms ease infinite alternate-reverse;
 }
-
 .Loading-screen div:nth-child(2) {
   /*find 2nd child inside of the div and give a delay for 300ms */
   animation-delay: 100ms;
 }
-
 .Loading-screen div:nth-child(3) {
   animation-delay: 250ms;
 }
-
 .Loading-screen div:nth-child(4) {
   animation-delay: 400ms;
 }
@@ -49,19 +77,14 @@ body {
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
-.logo {
+.container .logo {
   height: 27vh;
   width: 45vw;
   margin-top: 0;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -93,45 +116,80 @@ body {
 }
 
 .sign_up {
-  flex: 1;
   background-color: #27e227b8;
-  font-size: 19px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 
 .sign_in {
-  flex: 1;
   background-color: #e804c4a8;
-  font-size: 19px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 
 .user {
-  background-color: #47169e96;
-  font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
   margin-left: 53px;
-  font-size: 19px;
-  color: white;
-  height: 7vh;
 }
 
 .pass {
-  background-color: #47169e96;
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
   margin-left: 22px;
+}
+
+.sign-up-screen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#goback {
+  display: flex;
+  align-items: center;
+  background-color: #470303;
+  width: 100%;
+  height: 8vh;
   font-size: 19px;
   color: white;
-  font-family: "Montserrat", sans-serif;
-  height: 7vh;
+}
+
+.logo {
+  height: 30vh;
+  margin: 3vh;
+}
+
+.sign-up-screen {
+  background-image: url("../image/signupscreen.jpg");
+  background-size: cover;
+}
+
+.email_pass {
+  height: 32vh;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+
+#email {
+  margin-left: 107px;
+}
+
+#pass {
+  margin-left: 78px;
+}
+
+#confirmPass {
+  margin-left: 5px;
+}
+
+.signup-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: #470303;
+  width: 100%;
+  font-size: 19px;
+  color: white;
 }
 
 .chat-screen {
@@ -179,7 +237,6 @@ body {
   color: white;
   font-size: 19px;
   overflow-y: auto;
-  margin: auto;
 }
 
 .chat_input_btn_container {
@@ -202,18 +259,11 @@ body {
 .send {
   background-color: #02521d;
   width: 20vw;
-  height: 7vh;
+  height: 8vh;
   font-size: 18px;
   color: white;
 }
 
-/* .settings{
-    background-color: rgb(234, 8, 85);
-    display: flex;
-    flex: 1;
-    width: 100%;
-    height: 8vh;
-} */
 .videocall {
   display: flex;
   justify-content: space-between;
@@ -221,10 +271,11 @@ body {
 
 .msg-bubble-left {
   display: inline-block;
+  min-width: 45px;
   height: 24px;
   padding: 25px;
-  margin-left: 26px;
-  background:#04a912d6;
+  margin-left: 12px;
+  background: #04a912d6;
   position: relative;
   -moz-border-radius: 0px 10px 10px 10px;
   -webkit-border-radius: 0px 10px 10px 10px;
@@ -245,8 +296,10 @@ body {
 
 .msg-bubble-right {
   display: inline-block;
+  min-width: 45px;
+  height: 24px;
   padding: 25px;
-  margin-right: 26px;
+  margin-right: 12px;
   background: #04a912d6;
   position: relative;
   -moz-border-radius: 10px 0px 10px 10px;
@@ -266,94 +319,12 @@ body {
   border-bottom: 13px solid transparent;
 }
 
-.sign-up-screen {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-#goback {
-  display: flex;
-  align-items: center;
-  background-color: #470303;
-  width: 100%;
-  height: 8vh;
-  font-size: 19px;
-  color: white;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  height: 30vh;
-  margin: 3vh;
-}
-
-.sign-up-screen {
-  background-image: url("../image/signupscreen.jpg");
-  background-size: cover;
-}
-
-.email_pass {
-  height: 32vh;
-  font-size: 20px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#email {
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  margin-left: 107px;
-  font-size: 19px;
-  font-family: "Montserrat", sans-serif;
-}
-
-#pass {
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  margin-left: 78px;
-  font-size: 19px;
-  font-family: "Montserrat", sans-serif;
-}
-
-#confirmPass {
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  margin-left: 5px;
-  font-size: 19px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.signup-btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 8vh;
-  background-color: #470303;
-  width: 100%;
-  font-size: 19px;
-  color: white;
-}
-
 .msg-date-time {
   font-size: 11px;
   position: absolute;
   bottom: 0;
 }
+
 .msg-name {
   margin: 0px 10px;
   color: #fff;
@@ -366,6 +337,7 @@ body {
   right: 0;
   margin-right: 5px;
 }
+
 .msg-bubble-right .msg-date-time {
   font-size: 11px;
   position: absolute;
@@ -373,3 +345,5 @@ body {
   left: 0;
   margin-left: 5px;
 }
+
+/*# sourceMappingURL=style.css.map */
