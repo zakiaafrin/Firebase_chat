@@ -1,7 +1,6 @@
 .sign-up-screen {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    @extend %flex-column-center;
     justify-content: space-between;
     height: 100%;
     width: 100%;
@@ -34,22 +33,21 @@
     font-size: 20px;
     color: white;
     @extend %flex-center;
-    align-items: center;
-    flex-direction: column;
+    @extend %flex-column-center;
   }
   
   #email {
-    @extend %email_pass;
+    @extend %email-pass;
     margin-left: 107px;    
   }
   
   #pass {
-    @extend %email_pass; 
+    @extend %email-pass; 
     margin-left: 78px;
   }
   
   #confirmPass {
-    @extend %email_pass;
+    @extend %email-pass;
     margin-left: 5px;
   }
   

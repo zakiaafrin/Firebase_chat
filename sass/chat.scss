@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(to right, #740867 , #89fffd);
+    background-image: linear-gradient(to right, #1b0418, #42c547);
     height: 9vh;
     width: 100%;
   }
@@ -30,7 +30,7 @@
     background-image: radial-gradient(#0c0401 10%, #3F51B5 15%, #220227 60%);
     color: white;
     border-radius: 50%;
-    width: 15vw;
+    width: 10vw;
     height: 6.5vh;
   }
   
@@ -49,13 +49,12 @@
     display: flex;
     flex: 1;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     align-items: center;
   }
   
   .chat_input_msg {
-    background-color: #02521d94;
+    background-image: linear-gradient(to right, #1b0418, #42c547);
     height: 7vh;
     width: 85vw;
     color: whitesmoke;
@@ -76,56 +75,34 @@
   }
   
   .msg-bubble-left {
-    display: inline-block;
-    min-width: 65px;
-    padding: 15px;
     margin-left: 12px;
-    background:#04a912d6;
-    position: relative;
+    @extend %message-bubble;
     -moz-border-radius: 0px 10px 10px 10px;
     -webkit-border-radius: 0px 10px 10px 10px;
     border-radius: 0px 10px 10px 10px;
   }
   
   .msg-bubble-right {
-    display: inline-block;
-    min-width: 65px;
-    padding: 15px;
     margin-right: 12px;
-    background: #04a912d6;
-    position: relative;
+    @extend %message-bubble;
     -moz-border-radius: 10px 0px 10px 10px;
     -webkit-border-radius: 10px 0px 10px 10px;
     border-radius: 10px 0px 10px 10px;
   }
   .msg-bubble-left:before {
-    content: "";
-    position: absolute;
     right: 100%;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 0px solid transparent;
+    @extend %messagebubble-leftright;
     border-right: 16px solid #04a912d6;
-    border-bottom: 8px solid transparent;
   }
   
   .msg-bubble-right:before {
-    content: "";
-    position: absolute;
     left: 100%;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 0px solid transparent;
+    @extend %messagebubble-leftright;
     border-left: 16px solid #04a912d6;
-    border-bottom: 8px solid transparent;
   }
    
   .msg-date-time {
-    font-size: 11px;
-    position: absolute;
-    bottom: 0;
+    @extend %message-datetime;
   }
   .msg-name {
     margin: 0px 10px;
@@ -133,16 +110,12 @@
   }
   
   .msg-bubble-left .msg-date-time {
-    font-size: 11px;
-    position: absolute;
-    bottom: 0;
+    @extend %message-datetime;
     right: 0;
     margin-right: 5px;
   }
   .msg-bubble-right .msg-date-time {
-    font-size: 11px;
-    position: absolute;
-    bottom: 0;
+    @extend %message-datetime;
     left: 0;
     margin-left: 5px;
   }

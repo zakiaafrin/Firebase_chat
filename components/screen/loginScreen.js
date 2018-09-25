@@ -20,8 +20,8 @@ function LoginScreen() {
     </div>
     <a href="#" class="forgot">Forgot Password?</a>
     <div class="image">
-        <div id="facebook-login-btn"><img src="./image/facebook-logo.png" alt="Facebook" style="width: 95px;""></div>
-        <div id="google-login-btn"><img src="./image/gmail.png" alt="Google" style="width: 100px;"></div>    
+        <div id="facebook-login-btn"><img src="./image/facebook-logo.png" alt="Facebook" style="width: 95px; background-color: #4f01637d; border-radius: 20%;"></div>
+        <div id="google-login-btn"><img src="./image/gmail.png" alt="Google" style="width: 100px;  background-color: #4f01637d; border-radius: 20%;"></div>    
     </div>
     <div class="button">
         <button class="sign_up" id="sign_up">Sign up</button>                

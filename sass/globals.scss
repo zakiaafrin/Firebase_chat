@@ -9,7 +9,6 @@ body {
     background-image: linear-gradient(to right, #740867 , #89fffd);
     animation-name: background;
     animation-duration: 8s;
-  
  }
 
   %flex-center {
@@ -29,18 +28,47 @@ body {
     height: 7vh;
   }
 
-  %sign_in_up {
+  %sign-in-up {
     flex: 1;
     font-size: 19px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
   }
 
-  %email_pass {
+  %email-pass {
     font-family: "Montserrat", sans-serif;
     border-bottom: 1px solid black;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     font-size: 19px; 
+  }
+
+  %flex-column-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  %messagebubble-leftright-before{
+    content: "";
+    position: absolute;    
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+
+  %message-bubble{
+    display: inline-block;
+    min-width: 65px;
+    padding: 15px;    
+    background:#04a912d6;
+    position: relative;
+  }
+
+  %message-datetime{
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
   }

@@ -5,16 +5,15 @@
     width: 100vw;
     height: 100vh;
     @extend %flex-center;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column-center;
+    
 
 .logo{
     height: 27vh;
     width: 45vw;
     margin-top: 0;
     @extend %flex-center;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-column-center;
     }
   }
 
@@ -46,12 +45,12 @@
   }
   
 .sign_up {
-    @extend %sign_in_up;
+    @extend %sign-in-up;
     background-color: #27e227b8;
   }
   
 .sign_in {
-    @extend %sign_in_up;
+    @extend %sign-in-up;
     background-color: #e804c4a8;
   }
   
