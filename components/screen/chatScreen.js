@@ -18,24 +18,18 @@ function ChatScreen() {
             Hi ${window.user.email.split('@')[0]}! 
             </div>
             <div class="videocall">
-                <div style="margin-right: 9px; ">
-                    <img src="./image/call.png" alt="Call" width="35vw" height="35vh">
-                </div>
-                <div style="margin-right: 9px; ">
-                    <img src="./image/videocall.png" alt="Call" width="35vw" height="35vh">
-                </div>
+                
                 <div>
                     <button class="signout" id=="signout">Sign Out</button>
                 </div>
             </div>
         </div>
-        <div id="chat_messages_container">
+        <div class="chat_messages_container">
             <div id="chat_messages" class="chat_messages"></div>
         <div class="chat_input_btn_container">
             <input type="text" class="chat_input_msg" id="chat_input_msg" />
-            <button class="send" id="send"><img src="./image/send.png" alt="Call" width="25vw" height="25vh"></button>
+            <button class="send" id="send">Send</button>
         </div>
-        <div class="settings"></div>
     </div>
       `;
     return container;
@@ -102,3 +96,13 @@ function scroll() {
     let height = $('#chat_messages')[0].scrollHeight;
     $('#chat_messages').scrollTop(height);
 }
+
+
+// <div style="margin-right: 9px; ">
+                //     <img src="./image/call.png" alt="Call" width="35vw" height="35vh">
+                // </div>
+                // <div style="margin-right: 9px; ">
+                //     <img src="./image/videocall.png" alt="Call" width="35vw" height="35vh">
+                // </div>
+                
+        // <div class="settings"></div>

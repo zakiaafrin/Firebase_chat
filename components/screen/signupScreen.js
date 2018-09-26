@@ -13,15 +13,21 @@ function SignUpScreen() {
         <img src="./image/back-button.png" alt="Back Button" width="35vw" height="35vh">
         <div><img src="./image/go_back.png" alt="Back Button" width="28vw" height="45vh"></div>
     </div>
-    <div class="logo">
-        <img src="./image/logo_signup_4.png" alt="Signup Logo" width="295vw" height="245vh">
+    <div class="logo-signup">
+        <img src="./image/logo_signup_4.png" alt="Signup Logo" width="165vw" height="125vh">
     </div>
     <div class="email_pass">
-        <div><form>Email<input id="email" type="text" placeholder="abc@def.com"></form></div>
+        <div style="margin-bottom: 8px;"><form>Email
         </br>
-        <div><form>Password<input id="pass" type="password" placeholder="******"></form></div>
+        <input id="email" type="text" placeholder="abc@def.com"></form></div>
+        
+        <div style="margin-bottom: 8px;"><form>Password
         </br>
-        <div><form>Confirm Password<input id="confirmPass" type="password" placeholder="******"></form></div>
+        <input id="pass" type="password" placeholder="******"></form></div>
+        
+        <div style="margin-bottom: 8px;"><form>Confirm Password
+        </br>
+        <input id="confirmPass" type="password" placeholder="******"></form></div>
     </div>
     <div class="signup-btn">
         <div id="signup_button">Sign up</div>

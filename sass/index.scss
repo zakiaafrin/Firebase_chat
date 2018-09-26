@@ -1,14 +1,388 @@
-@import 'fonts';
-@import 'globals';
-@import 'loading';
-@import 'login';
-@import 'signup';
-@import 'chat';
+/* loading-screen */
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #740867, #89fffd);
+    animation-name: background;
+    animation-duration: 8s;
+  }
+  
+  .Loading-screen {
+    display: flex;
+    justify-content: center;
+    height: 84vh;
+    align-items: center;
+  }
+  .Loading-screen html {
+    height: 90%;
+  }
+  .Loading-screen .loadbody {
+    display: flex;
+    align-items: center;
+    height: 90%;
+  }
+  .Loading-screen .back {
+    margin: 1em auto;
+    font-family: "Roboto";
+  }
+  .Loading-screen .back span {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fc69e8;
+    background: #014b47;
+    display: table-cell;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 5px 0 #fc69e8;
+    padding: 0 15px;
+    line-height: 100px;
+    animation: jumb 2s infinite;
+  }
+  @keyframes jumb {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+      box-shadow: 0 15px 0 #fc69e8;
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .Loading-screen .back span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .Loading-screen .back span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .Loading-screen .back span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .Loading-screen .back span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .Loading-screen .back span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .Loading-screen .back span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .Loading-screen .back span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  
+/* login-screen */
+
+.container-login{
+  display: flex;
+  justify-content: center;
+  background-image: url("../image/login_background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-login {
+  display: flex;
+  justify-content: center;
+  height: 34vh;
+  width: 45vw;
+  margin-top: -42px;
+  flex-direction: column;
+  align-items: center;
+}
+  .in {
+    height: 15vh;
+    font-size: 20px;
+  }
+  
+  /* .forgot {
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+  } */
+  
+  .image {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 18vh;
+    margin: 10vh 10vw 5vh 10vw;
+}
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 18vh;
+  }
+  
+  .sign_up {
+    flex: 1;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    background-color: #27e227b8;
+  }
+  
+  .sign_in {
+    flex: 1;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    background-color: #e804c4a8;
+  }
+
+  .userid {
+    background-color: #f6f7ffc9;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 18px;
+    color: black;
+    height: 7vh;
+    margin-left: 53px;
+  }
+  
+  .pass {
+    background-color: #f6f7ffba;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 18px;
+    color: black;
+    height: 7vh;
+    margin-left: 22px;
+  }
+  
+   /* signup-screen */
+
+  .sign-up-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  #goback {
+    display: flex;
+    align-items: center;
+    background-color: #3f020294;
+    width: 100%;
+    height: 8vh;
+    font-size: 19px;
+    color: white;
+  }
+  
+  .logo-signup {
+    display: flex;
+    justify-content: center;
+    height: 34vh;
+    width: 45vw;
+    margin-top: -42px;
+    flex-direction: column;
+    align-items: center;
+  }
   
 
+  .sign-up-screen {
+    background-image: url("../image/signupscreen.jpg");
+    background-size: cover;
+  }
   
- 
+  .email_pass {
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+  }
   
+  #confirmPass, #pass, #email {
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 18px;
+    padding: 8px;
+  }
   
- 
+  .signup-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-image: linear-gradient(to right, #3f020294, #b10303, red, violet, red, #b10303, #3f020294);
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+/* chat-screen */
+
+  .chat-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right, #052100f0, #89fffdcc);
+    height: 9vh;
+    width: 100%;
+  }
+  
+  .profile {
+    /* font-family: Arial, Helvetica, sans-serif, cursive; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .signout {
+    font-size: 17px;
+    background-image: radial-gradient(#0c0401 10%, #3F51B5 15%, #220227 60%);
+    color: white;
+    border-radius: 50%;
+    width: 15vw;
+    height: 6.5vh;
+  }
+  
+  .chat_messages {
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 83vh;
+    width: 100%;
+    color: white;
+    font-size: 19px;
+    overflow-y: auto;
+  }
+  
+  .chat_input_btn_container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat_input_msg {
+    background-color: #02521d94;
+    height: 7vh;
+    width: 85vw;
+    color: whitesmoke;
+    font-size: 19px;
+  }
+  
+  .send {
+    background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);
+    width: 20vw;
+    height: 8vh;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .videocall {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .msg-bubble-left {
+    display: inline-block;
+    min-width: 65px;
+    padding: 15px;
+    margin-left: 12px;
+    background: #04a912d6;
+    position: relative;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    border-radius: 0px 10px 10px 10px;
+  }
+  
+  .msg-bubble-right {
+    display: inline-block;
+    min-width: 65px;
+    padding: 15px;
+    margin-right: 12px;
+    background: #04a912d6;
+    position: relative;
+    -moz-border-radius: 10px 0px 10px 10px;
+    -webkit-border-radius: 10px 0px 10px 10px;
+    border-radius: 10px 0px 10px 10px;
+  }
+  
+  .msg-bubble-left:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-right: 16px solid #04a912d6;
+    border-bottom: 8px solid transparent;
+  }
+  
+  .msg-bubble-right:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 16px solid #04a912d6;
+    border-bottom: 8px solid transparent;
+  }
+  
+  .msg-date-time {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .msg-name {
+    margin: 0px 10px;
+    color: #fff;
+  }
+  
+  .msg-bubble-left .msg-date-time {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+  }
+  
+  .msg-bubble-right .msg-date-time {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+  }
