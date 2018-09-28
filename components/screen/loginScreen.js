@@ -11,12 +11,13 @@ function LoginScreen() {
     container.innerHTML = `
     <div class="container-login">
         <div class="logo-login">
-            <img src="./image/login_logo.png" alt="logo" style="width: 10vw; height: 20vh; margin-bottom: 10px; margin-top: 10px;">
+            <img src="./image/login_logo.png" alt="logo" style="width: 35vw; height: 20vh;">
         </div>
-        <div class="in">
-            <form style="font-weight: bold; color: white; font-size: 21px;">Email <input class="userid" type="text" placeholder="abc@def.com"></form>
-            </br>
-            <form style="font-weight: bold; color: white; font-size: 21px;">Password  <input class="pass" type="password" placeholder="******"></form>
+        <div class="in" style="font-weight: bold; color: white; font-size: 22px;">
+            <form>Email</br><input class="userid" type="text" placeholder="abc@def.com"></form>
+        </div>
+        <div class="in" style="font-weight: bold; color: white; font-size: 22px;">
+            <form>Password</br><input class="pass" type="password" placeholder="******"></form>
         </div>
         <div class="image">
             <div id="facebook-login-btn"><img src="./image/facebook-logo.png" alt="Facebook" style="width: 95px; background-color: #4f01637d; border-radius: 20%;"></div>

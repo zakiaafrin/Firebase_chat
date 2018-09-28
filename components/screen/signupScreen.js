@@ -17,7 +17,7 @@ function SignUpScreen() {
     </div>
 
     <div class="logo-signup">
-        <img src="./image/logo_signup_4.png" alt="Signup Logo" width="165vw" height="125vh">
+        <img src="./image/logo_signup_4.png" alt="Signup Logo" width="165vw" height="135vh">
     </div>
 
     <div class="email_pass">

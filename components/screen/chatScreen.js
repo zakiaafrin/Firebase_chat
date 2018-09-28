@@ -15,11 +15,19 @@ function ChatScreen() {
         <div class="chat-header">
             <div class="profile">
                 <div>
-                    <img src="./image/chat_logo.png" width="40vw" height="45vh">
+                    <img src="./image/chat_logo.png" width="40vw" height="55vh">
                 </div>
                 Hi ${window.user.email.split('@')[0]}! 
             </div>
-               
+            
+            <div style="margin-right: 9px; ">
+                <img src="./image/call.png" alt="Call" width="35vw" height="35vh">
+            </div>
+
+            <div style="margin-right: 9px; ">
+                <img src="./image/videocall.png" alt="Call" width="35vw" height="35vh">
+            </div>
+
             <div>
                 <button class="signout" id=="signout">Sign Out</button>
             </div>
@@ -87,7 +95,7 @@ function initChatScreenListeners(messages) {
             else {
                 currentPerson = msg.email;
             }
-            // console.log(msg);
+        console.log(msg);
             $('#chat_messages').append(Messages(msg,showUsername));
         }
         
@@ -100,11 +108,3 @@ function scroll() {
 }
 
 
-// <div style="margin-right: 9px; ">
-                //     <img src="./image/call.png" alt="Call" width="35vw" height="35vh">
-                // </div>
-                // <div style="margin-right: 9px; ">
-                //     <img src="./image/videocall.png" alt="Call" width="35vw" height="35vh">
-                // </div>
-                
-        // <div class="settings"></div>

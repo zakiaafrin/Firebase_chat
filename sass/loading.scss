@@ -1,8 +1,13 @@
 /* loading-screen */
   
 .Loading-screen {
-    @extend %flex-center;
-    height: 84vh;
+    // @extend %flex-center;
+    // height: 84vh;
+    @extend %column-center;
+    background-image: url("../image/loadingscreen.jpg");
+    @extend %background-cover;
+    width: 100vw;
+    height: 100vh;
 
     .loadbody {
         @extend %align-center;
@@ -15,7 +20,7 @@
             span {
                 font-size: 3em;
                 font-weight: bold;
-                color: #f341cc;
+                color: rgb(1, 253, 22);
                 background: #080144;
                 display: table-cell;
                 box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 5px 0 #080144;
@@ -55,7 +60,7 @@
     }
     50% {
       transform: translateY(-30px);
-      box-shadow: 0 15px 0 #f341cc;
+      box-shadow: 0 15px 0 rgb(1, 253, 22);
     }
     100% {
       transform: translateY(0px);

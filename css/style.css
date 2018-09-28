@@ -26,7 +26,7 @@ body {
   animation-duration: 8s;
 }
 
-.chatscreen .chat_input_btn_container, .chatscreen .chat-header, .Loading-screen {
+.chatscreen .chat_input_btn_container, .chatscreen .chat-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@ body {
   flex-direction: column;
 }
 
-.sign-up-screen .email_pass, .sign-up-screen .logo-signup, .container-login .logo-login, .container-login {
+.sign-up-screen .email_pass, .sign-up-screen .logo-signup, .container-login .logo-login, .container-login, .Loading-screen {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +73,7 @@ body {
   height: 7vh;
 }
 
-.chatscreen .chat_messages, .container-login {
+.chatscreen .chat_messages, .container-login, .Loading-screen {
   background-size: cover;
   background-attachment: fixed;
 }
@@ -118,7 +118,9 @@ body {
 
 /* loading-screen */
 .Loading-screen {
-  height: 84vh;
+  background-image: url("../image/loadingscreen.jpg");
+  width: 100vw;
+  height: 100vh;
 }
 .Loading-screen .loadbody {
   height: 90%;
@@ -130,7 +132,7 @@ body {
 .Loading-screen .loadbody .back span {
   font-size: 3em;
   font-weight: bold;
-  color: #f341cc;
+  color: #01fd16;
   background: #080144;
   display: table-cell;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 5px 0 #080144;
@@ -166,7 +168,7 @@ body {
   }
   50% {
     transform: translateY(-30px);
-    box-shadow: 0 15px 0 #f341cc;
+    box-shadow: 0 15px 0 #01fd16;
   }
   100% {
     transform: translateY(0px);
@@ -179,19 +181,13 @@ body {
   height: 100vh;
 }
 .container-login .logo-login {
-  height: 34vh;
+  height: 50vh;
   width: 45vw;
   margin-top: -42px;
 }
 .container-login .in {
   height: 15vh;
   font-size: 20px;
-}
-.container-login .in .userid {
-  margin-left: 53px;
-}
-.container-login .in .pass {
-  margin-left: 22px;
 }
 .container-login .image {
   width: 80%;
@@ -203,10 +199,10 @@ body {
   height: 18vh;
 }
 .container-login .button .sign_up {
-  background-color: #27e227b8;
+  background-color: #00ff0087;
 }
 .container-login .button .sign_in {
-  background-color: #e804c4a8;
+  background-color: #e804c48c;
 }
 
 /* .forgot {
@@ -217,7 +213,7 @@ body {
 } */
 /* signup-screen */
 .sign-up-screen {
-  background-image: url("../image/signupscreen.jpg");
+  background-image: url("../image/signupscreen1.jpg");
   background-size: cover;
   flex-direction: column;
   justify-content: space-between;
@@ -226,7 +222,7 @@ body {
   position: absolute;
 }
 .sign-up-screen #goback {
-  background-color: #3f020294;
+  background-color: #25000094;
   width: 100%;
   height: 8vh;
   font-size: 19px;
@@ -243,7 +239,7 @@ body {
 .sign-up-screen .signup-btn {
   justify-content: space-around;
   height: 8vh;
-  background-image: linear-gradient(to right, #3f020294, #b10303, red, violet, red, #b10303, #3f020294);
+  background-image: linear-gradient(to right, #3f020200, #b1030399, red, violet, red, #b10303b8, #3f020294);
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -255,7 +251,7 @@ body {
 }
 .chatscreen .chat-header {
   justify-content: space-between;
-  background-image: linear-gradient(to right, #052100f0, #89fffdcc);
+  background-image: linear-gradient(to right, #28002f, #05a092);
   height: 9vh;
   width: 100%;
 }
@@ -270,7 +266,7 @@ body {
   font-size: 17px;
   background-image: radial-gradient(#0c0401 10%, #3F51B5 15%, #220227 60%);
   border-radius: 50%;
-  width: 15vw;
+  width: 25vw;
   height: 6.5vh;
 }
 .chatscreen .chat_messages {
@@ -314,9 +310,10 @@ body {
 .chatscreen .chat_input_btn_container {
   flex: 1;
   width: 100%;
+  height: 100%;
 }
 .chatscreen .chat_input_btn_container .chat_input_msg {
-  background-color: #02521d94;
+  background-color: #00000094;
   height: 7vh;
   width: 85vw;
   font-size: 19px;

@@ -9,7 +9,7 @@
 
     .logo-login {
         @extend %column-center;
-        height: 34vh;
+        height: 50vh;
         width: 45vw;
         margin-top: -42px;
     }
@@ -20,12 +20,10 @@
 
         .userid {
             @extend %userid-pass;
-            margin-left: 53px;
         }
 
         .pass {
             @extend %userid-pass;
-            margin-left: 22px;
         }
     }
 
@@ -43,12 +41,12 @@
 
         .sign_up {
             @extend %sign-up-in;
-            background-color: #27e227b8;
+            background-color: #00ff0087;
         }
 
         .sign_in {
             @extend %sign-up-in;
-            background-color: #e804c4a8;
+            background-color: #e804c48c;
         }
     }
 }
