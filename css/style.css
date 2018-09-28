@@ -71,6 +71,8 @@ body {
   font-size: 18px;
   color: black;
   height: 7vh;
+  border-radius: 10px;
+  outline: none;
 }
 
 .chatscreen .chat_messages, .container-login, .Loading-screen {
@@ -110,6 +112,9 @@ body {
   border-right: 0;
   font-size: 18px;
   padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  height: 5vh;
 }
 
 #goback, .email_pass, .signup-btn, .profile, .signout, .chat_messages, .msg-name, .chat_input_msg, .send {
@@ -188,6 +193,10 @@ body {
 .container-login .in {
   height: 15vh;
   font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .container-login .image {
   width: 80%;
@@ -313,10 +322,10 @@ body {
   height: 100%;
 }
 .chatscreen .chat_input_btn_container .chat_input_msg {
-  background-color: #00000094;
+  background-image: linear-gradient(to right, #28002f, #05a092);
   height: 7vh;
   width: 85vw;
-  font-size: 19px;
+  font-size: 18px;
 }
 .chatscreen .chat_input_btn_container .send {
   background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);

@@ -13,22 +13,24 @@ function ChatScreen() {
     container.innerHTML = `
     <div class="chatscreen">
         <div class="chat-header">
+        
             <div class="profile">
                 <div>
                     <img src="./image/chat_logo.png" width="40vw" height="55vh">
                 </div>
                 Hi ${window.user.email.split('@')[0]}! 
             </div>
-            
-            <div style="margin-right: 9px; ">
-                <img src="./image/call.png" alt="Call" width="35vw" height="35vh">
-            </div>
 
-            <div style="margin-right: 9px; ">
-                <img src="./image/videocall.png" alt="Call" width="35vw" height="35vh">
-            </div>
+            <div style="display: flex; align-items: center;">
+                <div style="display: flex;">
+                    <div style="margin-right: 9px;">
+                        <img src="./image/call.png" alt="Call" width="35vw" height="35vh">
+                    </div>
 
-            <div>
+                    <div style="margin-right: 9px;">
+                        <img src="./image/videocall.png" alt="Call" width="35vw" height="35vh">
+                    </div>
+                </div>
                 <button class="signout" id=="signout">Sign Out</button>
             </div>
         </div>

@@ -91,10 +91,10 @@
         height: 100%;
 
         .chat_input_msg {
-            background-color: #00000094;
+            background-image: linear-gradient(to right, #28002f, #05a092);
             height: 7vh;
             width: 85vw;
-            font-size: 19px;
+            font-size: 18px;
         }
         .send {
             background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);

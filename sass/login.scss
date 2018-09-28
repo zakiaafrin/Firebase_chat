@@ -17,6 +17,10 @@
     .in {
         height: 15vh;
         font-size: 20px;
+        font-weight: bold;
+        color: white; 
+        font-size: 20px;
+        margin-bottom: 10px;
 
         .userid {
             @extend %userid-pass;

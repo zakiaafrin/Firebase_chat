@@ -13,10 +13,10 @@ function LoginScreen() {
         <div class="logo-login">
             <img src="./image/login_logo.png" alt="logo" style="width: 35vw; height: 20vh;">
         </div>
-        <div class="in" style="font-weight: bold; color: white; font-size: 22px;">
+        <div class="in">
             <form>Email</br><input class="userid" type="text" placeholder="abc@def.com"></form>
         </div>
-        <div class="in" style="font-weight: bold; color: white; font-size: 22px;">
+        <div class="in">
             <form>Password</br><input class="pass" type="password" placeholder="******"></form>
         </div>
         <div class="image">

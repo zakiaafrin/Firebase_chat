@@ -56,6 +56,8 @@ body {
     font-size: 18px;
     color: black;
     height: 7vh;
+    border-radius: 10px;
+    outline: none;
 }
 
 %background-cover {
@@ -95,6 +97,9 @@ body {
     border-right: 0;
     font-size: 18px;
     padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    height: 5vh;
 }
 
 #goback, .email_pass, .signup-btn, .profile, .signout, .chat_messages, .msg-name, .chat_input_msg, .send {    

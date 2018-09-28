@@ -21,15 +21,15 @@ function SignUpScreen() {
     </div>
 
     <div class="email_pass">
-        <div style="margin-bottom: 8px;">
+        <div style="margin-bottom: 10px;">
             <form>Email</br><input id="email" type="text" placeholder="abc@def.com"></form>
         </div>
         
-        <div style="margin-bottom: 8px;">
+        <div style="margin-bottom: 10px;">
             <form>Password</br><input id="pass" type="password" placeholder="******"></form>
         </div>
         
-        <div style="margin-bottom: 8px;">
+        <div style="margin-bottom: 10px;">
             <form>Confirm Password</br><input id="confirmPass" type="password" placeholder="******"></form>
         </div>
     </div>
