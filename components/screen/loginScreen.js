@@ -11,7 +11,7 @@ function LoginScreen() {
     container.innerHTML = `
     <div class="container-login">
         <div class="logo-login">
-            <img src="./image/login_logo.png" alt="logo" style="width: 35vw; height: 20vh;">
+            <img src="./image/login_logo.png" alt="logo" style="width: 135px; height: 120px;">
         </div>
         <div class="in">
             <form>Email</br><input class="userid" type="text" placeholder="abc@def.com"></form>

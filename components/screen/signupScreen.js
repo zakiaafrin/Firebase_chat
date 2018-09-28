@@ -11,8 +11,8 @@ function SignUpScreen() {
     container.innerHTML = `
     <div id="goback">
         <img src="./image/back-button.png" alt="Back Button" width="35vw" height="35vh">
-        <div>
-            <img src="./image/go_back.png" alt="Back Button" width="28vw" height="45vh">
+        <div style="margin-top: 5px;">
+            <img src="./image/go_back.png" alt="Back Button" width="28vw" height="55vh">
         </div>
     </div>
 

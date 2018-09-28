@@ -233,7 +233,7 @@ body {
 .sign-up-screen #goback {
   background-color: #25000094;
   width: 100%;
-  height: 8vh;
+  height: 9vh;
   font-size: 19px;
 }
 .sign-up-screen .logo-signup {
@@ -248,7 +248,7 @@ body {
 .sign-up-screen .signup-btn {
   justify-content: space-around;
   height: 8vh;
-  background-image: linear-gradient(to right, #3f020200, #b1030399, red, violet, red, #b10303b8, #3f020294);
+  background-image: linear-gradient(to right, #3f020200, #b1030399, red, #211f21c9, red, #b10303b8, #3f020294);
   width: 100%;
   font-size: 20px;
   font-weight: bold;
