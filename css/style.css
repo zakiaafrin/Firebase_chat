@@ -1,4 +1,23 @@
-/* loading-screen */
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../fonts/Montserrat/Montserrat-Black.ttf);
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,29 +26,108 @@ body {
   animation-duration: 8s;
 }
 
-.Loading-screen {
+.chatscreen .chat_input_btn_container, .chatscreen .chat-header, .Loading-screen {
   display: flex;
   justify-content: center;
-  height: 84vh;
   align-items: center;
 }
 
-.Loading-screen html {
-  height: 90%;
+.chatscreen, .container-login .button {
+  display: flex;
+  flex-direction: column;
 }
 
-.Loading-screen .loadbody {
+.sign-up-screen .email_pass, .sign-up-screen .logo-signup, .container-login .logo-login, .container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chatscreen .chat-header .profile, .sign-up-screen .signup-btn, .sign-up-screen #goback, .sign-up-screen, .Loading-screen .loadbody {
   display: flex;
   align-items: center;
-  height: 90%;
 }
 
-.Loading-screen .back {
+.container-login .image {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-login .button .sign_in, .container-login .button .sign_up {
+  flex: 1;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-login .in .pass, .container-login .in .userid {
+  background-color: #f6f7ffba;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 18px;
+  color: black;
+  height: 7vh;
+}
+
+.chatscreen .chat_messages, .container-login {
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.chatscreen .chat_messages .msg-bubble-right .msg-date-time, .chatscreen .chat_messages .msg-bubble-left .msg-date-time, .chatscreen .chat_messages .msg-date-time {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+}
+
+.chatscreen .chat_messages .msg-bubble-right:before, .chatscreen .chat_messages .msg-bubble-left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.chatscreen .chat_messages .msg-bubble-right, .chatscreen .chat_messages .msg-bubble-left {
+  display: inline-block;
+  min-width: 65px;
+  padding: 15px;
+  background: #04a912d6;
+  position: relative;
+}
+
+.sign-up-screen .email_pass #confirmPass, .sign-up-screen .email_pass #pass, .sign-up-screen .email_pass #email {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 18px;
+  padding: 8px;
+}
+
+#goback, .email_pass, .signup-btn, .profile, .signout, .chat_messages, .msg-name, .chat_input_msg, .send {
+  color: white;
+}
+
+/* loading-screen */
+.Loading-screen {
+  height: 84vh;
+}
+.Loading-screen .loadbody {
+  height: 90%;
+}
+.Loading-screen .loadbody .back {
   margin: 1em auto;
   font-family: "Roboto";
 }
-
-.Loading-screen .back span {
+.Loading-screen .loadbody .back span {
   font-size: 3em;
   font-weight: bold;
   color: #f341cc;
@@ -39,6 +137,27 @@ body {
   padding: 0 15px;
   line-height: 100px;
   animation: jumb 2s infinite;
+}
+.Loading-screen .loadbody .back span:nth-child(1) {
+  animation-delay: 0s;
+}
+.Loading-screen .loadbody .back span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.Loading-screen .loadbody .back span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.Loading-screen .loadbody .back span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.Loading-screen .loadbody .back span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.Loading-screen .loadbody .back span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.Loading-screen .loadbody .back span:nth-child(7) {
+  animation-delay: 0.6s;
 }
 
 @keyframes jumb {
@@ -53,60 +172,41 @@ body {
     transform: translateY(0px);
   }
 }
-.Loading-screen .back span:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.Loading-screen .back span:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.Loading-screen .back span:nth-child(3) {
-  animation-delay: 0.2s;
-}
-
-.Loading-screen .back span:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
-.Loading-screen .back span:nth-child(5) {
-  animation-delay: 0.4s;
-}
-
-.Loading-screen .back span:nth-child(6) {
-  animation-delay: 0.5s;
-}
-
-.Loading-screen .back span:nth-child(7) {
-  animation-delay: 0.6s;
-}
-
 /* login-screen */
 .container-login {
-  display: flex;
-  justify-content: center;
   background-image: url("../image/login_background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
-  flex-direction: column;
-  align-items: center;
 }
-
-.logo-login {
-  display: flex;
-  justify-content: center;
+.container-login .logo-login {
   height: 34vh;
   width: 45vw;
   margin-top: -42px;
-  flex-direction: column;
-  align-items: center;
 }
-
-.in {
+.container-login .in {
   height: 15vh;
   font-size: 20px;
+}
+.container-login .in .userid {
+  margin-left: 53px;
+}
+.container-login .in .pass {
+  margin-left: 22px;
+}
+.container-login .image {
+  width: 80%;
+  height: 22vh;
+  margin: 10vh 10vw 5vh 10vw;
+}
+.container-login .button {
+  width: 100%;
+  height: 18vh;
+}
+.container-login .button .sign_up {
+  background-color: #27e227b8;
+}
+.container-login .button .sign_in {
+  background-color: #e804c4a8;
 }
 
 /* .forgot {
@@ -115,282 +215,117 @@ body {
   color: white;
   font-weight: bold;
 } */
-.image {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  height: 22vh;
-  margin: 10vh 10vw 5vh 10vw;
-}
-
-.button {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 18vh;
-}
-
-.sign_up {
-  flex: 1;
-  font-size: 19px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  background-color: #27e227b8;
-}
-
-.sign_in {
-  flex: 1;
-  font-size: 19px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  background-color: #e804c4a8;
-}
-
-.userid {
-  background-color: #f6f7ffc9;
-  font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  font-size: 18px;
-  color: black;
-  height: 7vh;
-  margin-left: 53px;
-}
-
-.pass {
-  background-color: #f6f7ffba;
-  font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  font-size: 18px;
-  color: black;
-  height: 7vh;
-  margin-left: 22px;
-}
-
 /* signup-screen */
 .sign-up-screen {
-  display: flex;
-  align-items: center;
+  background-image: url("../image/signupscreen.jpg");
+  background-size: cover;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   width: 100%;
   position: absolute;
 }
-
-#goback {
-  display: flex;
-  align-items: center;
+.sign-up-screen #goback {
   background-color: #3f020294;
   width: 100%;
   height: 8vh;
   font-size: 19px;
-  color: white;
 }
-
-.logo-signup {
-  display: flex;
-  justify-content: center;
+.sign-up-screen .logo-signup {
   height: 34vh;
   width: 45vw;
   margin-top: -42px;
-  flex-direction: column;
-  align-items: center;
 }
-
-.sign-up-screen {
-  background-image: url("../image/signupscreen.jpg");
-  background-size: cover;
-}
-
-.email_pass {
-  display: flex;
-  justify-content: center;
+.sign-up-screen .email_pass {
   height: 35vh;
   font-size: 20px;
-  color: white;
-  align-items: center;
-  flex-direction: column;
 }
-
-#confirmPass, #pass, #email {
-  font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid black;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  font-size: 18px;
-  padding: 8px;
-}
-
-.signup-btn {
-  display: flex;
+.sign-up-screen .signup-btn {
   justify-content: space-around;
-  align-items: center;
   height: 8vh;
   background-image: linear-gradient(to right, #3f020294, #b10303, red, violet, red, #b10303, #3f020294);
   width: 100%;
   font-size: 20px;
-  color: white;
   font-weight: bold;
 }
 
 /* chat-screen */
-.chat-screen {
-  display: flex;
-  flex-direction: column;
+.chatscreen {
   width: 100%;
 }
-
-.chat-header {
-  display: flex;
+.chatscreen .chat-header {
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
   background-image: linear-gradient(to right, #052100f0, #89fffdcc);
   height: 9vh;
   width: 100%;
 }
-
-.profile {
+.chatscreen .chat-header .profile {
   /* font-family: Arial, Helvetica, sans-serif, cursive; */
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   margin-left: 5px;
-  color: white;
-  display: flex;
-  align-items: center;
 }
-
-.signout {
+.chatscreen .chat-header .signout {
   font-size: 17px;
   background-image: radial-gradient(#0c0401 10%, #3F51B5 15%, #220227 60%);
-  color: white;
   border-radius: 50%;
   width: 15vw;
   height: 6.5vh;
 }
-
-.chat_messages {
+.chatscreen .chat_messages {
   background-image: url("../image/background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   height: 83vh;
   width: 100%;
-  color: white;
   font-size: 19px;
   overflow-y: auto;
 }
-
-.chat_input_btn_container {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.chat_input_msg {
-  background-color: #02521d94;
-  height: 7vh;
-  width: 85vw;
-  color: whitesmoke;
-  font-size: 19px;
-}
-
-.send {
-  background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);
-  width: 20vw;
-  height: 8vh;
-  font-size: 18px;
-  color: white;
-}
-
-.videocall {
-  display: flex;
-  justify-content: space-between;
-}
-
-.msg-bubble-left {
-  display: inline-block;
-  min-width: 65px;
-  padding: 15px;
+.chatscreen .chat_messages .msg-bubble-left {
   margin-left: 12px;
-  background: #04a912d6;
-  position: relative;
   -moz-border-radius: 0px 10px 10px 10px;
   -webkit-border-radius: 0px 10px 10px 10px;
   border-radius: 0px 10px 10px 10px;
 }
-
-.msg-bubble-right {
-  display: inline-block;
-  min-width: 65px;
-  padding: 15px;
+.chatscreen .chat_messages .msg-bubble-right {
   margin-right: 12px;
-  background: #04a912d6;
-  position: relative;
   -moz-border-radius: 10px 0px 10px 10px;
   -webkit-border-radius: 10px 0px 10px 10px;
   border-radius: 10px 0px 10px 10px;
 }
-
-.msg-bubble-left:before {
-  content: "";
-  position: absolute;
+.chatscreen .chat_messages .msg-bubble-left:before {
   right: 100%;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-top: 0px solid transparent;
   border-right: 16px solid #04a912d6;
-  border-bottom: 8px solid transparent;
 }
-
-.msg-bubble-right:before {
-  content: "";
-  position: absolute;
+.chatscreen .chat_messages .msg-bubble-right:before {
   left: 100%;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-top: 0px solid transparent;
   border-left: 16px solid #04a912d6;
-  border-bottom: 8px solid transparent;
 }
-
-.msg-date-time {
-  font-size: 11px;
-  position: absolute;
-  bottom: 0;
-}
-
-.msg-name {
+.chatscreen .chat_messages .msg-name {
   margin: 0px 10px;
-  color: #fff;
 }
-
-.msg-bubble-left .msg-date-time {
-  font-size: 11px;
-  position: absolute;
-  bottom: 0;
+.chatscreen .chat_messages .msg-bubble-left .msg-date-time {
   right: 0;
   margin-right: 5px;
 }
-
-.msg-bubble-right .msg-date-time {
-  font-size: 11px;
-  position: absolute;
-  bottom: 0;
+.chatscreen .chat_messages .msg-bubble-right .msg-date-time {
   left: 0;
   margin-left: 5px;
+}
+.chatscreen .chat_input_btn_container {
+  flex: 1;
+  width: 100%;
+}
+.chatscreen .chat_input_btn_container .chat_input_msg {
+  background-color: #02521d94;
+  height: 7vh;
+  width: 85vw;
+  font-size: 19px;
+}
+.chatscreen .chat_input_btn_container .send {
+  background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);
+  width: 20vw;
+  height: 8vh;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

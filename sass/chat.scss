@@ -1,0 +1,110 @@
+/* chat-screen */
+
+.chatscreen {
+    @extend %flex-column;
+    width: 100%;
+
+    .chat-header {
+        @extend %flex-center;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, #052100f0, #89fffdcc);
+        height: 9vh;
+        width: 100%;
+
+        .profile {
+            /* font-family: Arial, Helvetica, sans-serif, cursive; */
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 5px;
+            @extend %align-center;
+        }
+        .signout {
+            font-size: 17px;
+            background-image: radial-gradient(#0c0401 10%, #3F51B5 15%, #220227 60%);
+            border-radius: 50%;
+            width: 15vw;
+            height: 6.5vh;
+          }
+    }
+    .chat_messages {
+        background-image: url("../image/background.jpg");
+        @extend %background-cover;
+        height: 83vh;
+        width: 100%;
+        font-size: 19px;
+        overflow-y: auto;
+
+        .msg-bubble-left {
+            @extend %msg-bubble;
+            margin-left: 12px;
+            -moz-border-radius: 0px 10px 10px 10px;
+            -webkit-border-radius: 0px 10px 10px 10px;
+            border-radius: 0px 10px 10px 10px;
+        }
+          
+        .msg-bubble-right {
+            @extend %msg-bubble;
+            margin-right: 12px;
+            -moz-border-radius: 10px 0px 10px 10px;
+            -webkit-border-radius: 10px 0px 10px 10px;
+            border-radius: 10px 0px 10px 10px;
+        }
+          
+        .msg-bubble-left:before {
+            right: 100%;
+            border-right: 16px solid #04a912d6;
+            @extend %msgbubble-before;
+        }
+          
+        .msg-bubble-right:before {
+            left: 100%;
+            border-left: 16px solid #04a912d6;
+            @extend %msgbubble-before;
+        }
+          
+        .msg-date-time {
+            @extend %msg-datetime;
+        }
+          
+        .msg-name {
+            margin: 0px 10px;
+        }
+          
+        .msg-bubble-left .msg-date-time {
+            @extend %msg-datetime;
+            right: 0;
+            margin-right: 5px;
+        }
+          
+        .msg-bubble-right .msg-date-time {
+            @extend %msg-datetime;
+            left: 0;
+            margin-left: 5px;
+        }
+    }
+
+    .chat_input_btn_container {
+        @extend %flex-center;
+        flex: 1;
+        width: 100%;
+
+        .chat_input_msg {
+            background-color: #02521d94;
+            height: 7vh;
+            width: 85vw;
+            font-size: 19px;
+        }
+        .send {
+            background-image: radial-gradient(#000000fa 10%, #051ea7 15%, #040004 60%);
+            width: 20vw;
+            height: 8vh;
+            font-size: 18px;
+          }
+    }
+}   
+//   .videocall {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+  

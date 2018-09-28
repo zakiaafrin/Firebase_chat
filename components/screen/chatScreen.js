@@ -11,25 +11,27 @@ function ChatScreen() {
     container.id = 'chat-screen';                    //to loading screen
     container.classList.add('chat-screen');
     container.innerHTML = `
-    <div class="chat-screen">
+    <div class="chatscreen">
         <div class="chat-header">
             <div class="profile">
-            <div><img src="./image/chat_logo.png" width="40vw" height="45vh"></div>
-            Hi ${window.user.email.split('@')[0]}! 
-            </div>
-            <div class="videocall">
-                
                 <div>
-                    <button class="signout" id=="signout">Sign Out</button>
+                    <img src="./image/chat_logo.png" width="40vw" height="45vh">
                 </div>
+                Hi ${window.user.email.split('@')[0]}! 
+            </div>
+               
+            <div>
+                <button class="signout" id=="signout">Sign Out</button>
             </div>
         </div>
-        <div class="chat_messages_container">
-            <div id="chat_messages" class="chat_messages"></div>
+
+        <div id="chat_messages" class="chat_messages"></div>
+
         <div class="chat_input_btn_container">
             <input type="text" class="chat_input_msg" id="chat_input_msg" />
             <button class="send" id="send">Send</button>
         </div>
+    
     </div>
       `;
     return container;

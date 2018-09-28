@@ -34,8 +34,3 @@ function loadingScreen() {                      //loadingScreen function return 
 
     return container;
 }
-
-{/* <div></div>
-    <div></div>
-    <div></div>
-    <div></div> */}

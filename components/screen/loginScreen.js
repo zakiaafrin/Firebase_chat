@@ -10,22 +10,22 @@ function LoginScreen() {
     container.classList.add('Login-screen');
     container.innerHTML = `
     <div class="container-login">
-    <div class="logo-login">
-        <img src="./image/login_logo.png" alt="logo" style="width: 10vw; height: 20vh; margin-bottom: 10px; margin-top: 10px;">
-    </div>
-    <div class="in">
-        <form style="font-weight: bold; color: white; font-size: 21px;">Email <input class="userid" type="text" placeholder="abc@def.com"></form>
-        </br>
-        <form style="font-weight: bold; color: white; font-size: 21px;">Password  <input class="pass" type="password" placeholder="******"></form>
-    </div>
-    <div class="image">
-        <div id="facebook-login-btn"><img src="./image/facebook-logo.png" alt="Facebook" style="width: 95px; background-color: #4f01637d; border-radius: 20%;"></div>
-        <div id="google-login-btn"><img src="./image/gmail.png" alt="Google" style="width: 100px;  background-color: #4f01637d; border-radius: 20%;"></div>    
-    </div>
-    <div class="button">
-        <button class="sign_up" id="sign_up">Sign up</button>                
-        <button class="sign_in">Sign in</button>            
-    </div>
+        <div class="logo-login">
+            <img src="./image/login_logo.png" alt="logo" style="width: 10vw; height: 20vh; margin-bottom: 10px; margin-top: 10px;">
+        </div>
+        <div class="in">
+            <form style="font-weight: bold; color: white; font-size: 21px;">Email <input class="userid" type="text" placeholder="abc@def.com"></form>
+            </br>
+            <form style="font-weight: bold; color: white; font-size: 21px;">Password  <input class="pass" type="password" placeholder="******"></form>
+        </div>
+        <div class="image">
+            <div id="facebook-login-btn"><img src="./image/facebook-logo.png" alt="Facebook" style="width: 95px; background-color: #4f01637d; border-radius: 20%;"></div>
+            <div id="google-login-btn"><img src="./image/gmail.png" alt="Google" style="width: 100px;  background-color: #4f01637d; border-radius: 20%;"></div>    
+        </div>
+        <div class="button">
+            <button class="sign_up" id="sign_up">Sign up</button>                
+            <button class="sign_in">Sign in</button>            
+        </div>
 </div>
       `;
     return container;
